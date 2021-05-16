@@ -1,36 +1,22 @@
-# pyspark-notebook in container
+# pyspark-notebook-container
 
 - run spark and a Jupyter in a container
 
-# overview
+# Overview
 
+- See this [article](https://levelup.gitconnected.com/using-docker-and-pyspark-134cd4cab867) for details
 - the notebook runs in the container
-- the code is from this [article](https://levelup.gitconnected.com/using-docker-and-pyspark-134cd4cab867)
-- this simply includes a docker-compose and the csv in the repo
+- The purpose of this repo is simply include a docker-compose to make it easy to access the data file
 
-# get started
+# Getting Started
 
-- clone this repository
-  - `git clnone https://github.com/sjdillon/pyspark-notebook-container`
+- clone and start docker to launch notebook
 
-- navigate to directory
-  - `cd pyspark-notebook-container`
-- start the docker container
-  - `docker-compose up`
-- click the jupyter link in the output -  look for something like this: 
-  - ``pyspark-notebook_1  | [I 23:51:10.941 NotebookApp] http://127.0.0.1:8888/?token=2d5b03bba48fd696cc0ffa3435a84c2b01e39ee025a5d647``
-- open the notebook and run
-  - ``work/nb.ipynb``
-
-
-
-
-
-
-
-
-
-
-
-
-
+```bash
+# clone this repo
+git clone https://github.com/sjdillon/pyspark-notebook-container`
+# navigate to directory
+cd pyspark-notebook-container
+# start the docker container
+docker-compose up
+```
